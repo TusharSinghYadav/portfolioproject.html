@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+        <img src="icons8-graphic-designer-64.png" alt="Logo" height="50px" width="50px">
+    </div>
+    <h1>Tushar</h1>
+    <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutme.html">About Me</a></li>
+        <li><a href="./projects.html">Project</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+</div>
+<hr>
+    <h2>Contact Me:</h2>
+    <form action="submit_details.php" class="myform" method="post">
+        <label for="name" style="color: white;">Name:</label><br>
+        <input type="text" id="name" name="name" style="color: white;">
+        <br><br>
+        
+        <label for="email" style="color: white;">Email:</label><br>
+        <input type="email" id="email" name="email" required pattern="[a-z A-Z 0-9]+@[a-z A-Z 0-9.-]+[a-z A-Z]" style="color: white;"><br><br>
+        
+        <label for="mobile" style="color: white;">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" maxlength="10" style="color: white;"><br><br>
+        
+        <input type="submit" value="Submit" style="color: white;">
+        <br><br>
+<h2>Message:</h2>
+
+<!-- Comment form -->
+<form action="#" method="post">
+  <label for="name">Name:</label><br>
+<input type="text" id="name" name="name" placeholder="e.g. William" style="color: white;"><br>
+  
+<br>
+  <label for="comment">Message:</label><br>
+  <textarea id="comment" name="comment" rows="10" cols="60"></textarea><br><br>
+  <input type="submit" value="Submit" style="color: white;">
+</form>
+<br>
+<!-- Display comments -->
+<div id="comments">
+    <h3>Previous Comments:</h3>
+    <!-- Individual comment -->
+    <div class="comment">
+      <strong>John Doe:</strong>
+      <p>This is a great website!</p>
+    </div>
+  </div>
+</body>
+</html>
